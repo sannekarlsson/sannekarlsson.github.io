@@ -1,0 +1,18 @@
+{
+    "locals": {
+        "sites": [
+            {
+                "name": "CodePen",
+                "url": "codepen.io/"
+            },
+            {
+                "name": "GitHub",
+                "url": "github.com/"
+            },
+            {
+                "name": "Glitch",
+                "url": "glitch.com/@"
+            }
+        ]
+    }
+}

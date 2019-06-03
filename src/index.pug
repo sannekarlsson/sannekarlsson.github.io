@@ -1,0 +1,10 @@
+extends template
+
+block content
+    header.header
+        #sk-logo SK
+        ul.development-links
+            include components/development-icon
+            each site in locals.sites
+                li
+                    +development-icon(site.name, site.url, 'sannekarlsson')

@@ -1,0 +1,87 @@
+/* =========== */
+/*  Variables  */
+/* =========== */
+
+:root {
+    --white: #fff;
+    --sharp-grey: #666;
+    --coffee-grey: #DCD0CC;
+  }  
+  
+  /* ========= */
+  /*  Content  */
+  /* ========= */
+  
+  html {
+    box-sizing: border-box;
+    color: var(--sharp-grey);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+  }
+  
+  * {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: var(--coffee-grey);
+  }
+  
+  .header {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 44%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #sk-logo {
+    border-bottom: 0.02em solid var(--white);
+    color: var(--white);
+    font-family: 'Raleway', sans-serif;
+    font-size: 7.8rem;
+    font-weight: 100;
+    letter-spacing: -0.4em;
+    padding-left: 0.175em;
+    padding-right: 0.62em;
+  }
+  
+  .development-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 2.4em;
+    list-style-type: none;
+    margin-top: 1.8em;
+  }
+  
+  .development-icon {
+    width: 34px;
+  }
+  
+  .development-icon path {
+      fill: var(--sharp-grey);
+  }
+  
+  .development-icon .negative-area {
+    fill: var(--coffee-grey);
+  }
+
+  .icon-link {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  /* ==================================== */
+  /*  Hover effect for hoverable devices  */
+  /* ==================================== */
+  
+  @media (hover) {
+
+    .development-icon:hover path:not(.negative-area) {
+        fill: var(--white);
+    }
+    
+  }

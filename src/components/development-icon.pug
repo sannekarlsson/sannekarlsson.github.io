@@ -1,0 +1,5 @@
+mixin development-icon(site, site_url, username)
+
+    a.icon-link(href='https://' + site_url + username)
+        include svg-icon
+        +svg-icon(site)(class='development-icon')
