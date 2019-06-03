@@ -1,7 +1,11 @@
 # sannekarlsson.github.io 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+[Visit page](https://sannekarlsson.github.io)
 
-## Development 
+## Development
 
 Development files can be found in the source branch.
+
+Developed and built with [Pug](https://pugjs.org/) and [Parcel](https://parceljs.org/).
+
+Published with [gh-pages](https://www.npmjs.com/package/gh-pages).
