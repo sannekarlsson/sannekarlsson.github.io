@@ -9,9 +9,9 @@
     "build": "parcel build src/index.pug -d build --public-url .",
     "deploy": "gh-pages -b master -d build",
     "postbuild": "cp README.md build",
-    "prebuild": "rm -r build",
+    "prebuild": "rm -rf build",
     "predeploy": "npm run build",
-    "prestart": "rm -r dist",
+    "prestart": "rm -rf dist",
     "start": "parcel src/index.pug"
   },
   "dependencies": {
