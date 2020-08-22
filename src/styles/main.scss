@@ -1,0 +1,99 @@
+//* =========== */
+//*  Variables  */
+//* =========== */
+
+$bg-clr: #F9F8F7;
+// readable text contrast 
+$primary: #858787;
+// darker contrast, for hover 
+$primary-dark: #565757; 
+// minor contrast, for SK 
+$demi-light: #E3E3E1;
+
+
+/* ========= */
+/*  Content  */
+/* ========= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: $bg-clr;
+    color: $primary;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.header {
+    left: 50%;
+    margin-right: -50%;
+    position: absolute;
+    text-align: center;
+    top: 44%;
+    transform: translate(-50%, -50%);
+}
+
+.sk-logo {
+    fill: $demi-light;
+}
+
+.development-links {
+    list-style-type: none;
+    margin-bottom: 1.9em;
+    margin-top: 2.3em;
+
+    li {
+        display: inline-block;
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+    }
+}
+
+.icon-link {
+    cursor: pointer;
+    fill: $primary;
+    text-decoration: none;
+}
+
+.icon-link:focus,
+.icon-link:hover {
+    fill: $primary-dark;
+}
+
+.development-icon {
+    width: 39px;
+}
+
+//* ==================================== */
+//*  Media queries                       */
+//* ==================================== */
+
+/* ==================================== */
+/*  Wider screens                       */
+/* ==================================== */
+
+@media (min-width: 672px) {
+
+    h1 {
+        font-size: 0.875rem;
+    }
+
+    .development-icon {
+        width: 34px;
+    }
+
+}

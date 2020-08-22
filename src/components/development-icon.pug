@@ -1,5 +1,6 @@
 mixin development-icon(site, site_url, username)
 
-    a.icon-link(href='https://' + site_url + username)
+    a.icon-link(href= site_url + username)
         include svg-icon
-        +svg-icon(site)(class='development-icon')
+        +svg-icon(site)(width='20%' height='20%' 
+        viewBox='0 0 32 32', class='development-icon')

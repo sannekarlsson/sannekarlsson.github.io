@@ -10,3 +10,10 @@
 # Parcel
 .cache
 /dist
+
+# env
+.env
+
+# test
+/tests_output
+*.log

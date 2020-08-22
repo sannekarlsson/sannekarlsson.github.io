@@ -1,10 +1,15 @@
 extends template
 
 block content
+    - var username = 'sannekarlsson';
+
     header.header
-        #sk-logo SK
+        include components/svg-icon
+        +svg-icon('sk')(width='21%' height='21%' 
+        viewBox='0 0 39 37', class='sk-logo')
         ul.development-links
             include components/development-icon
             each site in locals.sites
                 li
-                    +development-icon(site.name, site.url, 'sannekarlsson')
+                    +development-icon(site.name, site.url, username)
+        h1 More to come.

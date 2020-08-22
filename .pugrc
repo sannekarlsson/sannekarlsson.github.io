@@ -3,15 +3,15 @@
         "sites": [
             {
                 "name": "CodePen",
-                "url": "codepen.io/"
+                "url": "https://codepen.io/"
             },
             {
                 "name": "GitHub",
-                "url": "github.com/"
+                "url": "https://github.com/"
             },
             {
                 "name": "Glitch",
-                "url": "glitch.com/@"
+                "url": "https://glitch.com/@"
             }
         ]
     }
